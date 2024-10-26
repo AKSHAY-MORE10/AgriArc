@@ -4,7 +4,7 @@ import { DB_NAME } from '../constants.js' ;
 const connectDB = async ()=>{
 try {
     
-    const instance = await mongoose.connect(`${process.env.MONGO_URI}/${DB_NAME}`)
+    const instance = await mongoose.connect(`mongodb+srv://nitesh_dk:nitesh112@nitesh.zownidz.mongodb.net/?retryWrites=true&w=majority&appName=NItesh/${DB_NAME}/${DB_NAME}`)
   
  console.log(`Mongo DB Connected Successfully !!:${instance.connection.host}`)
     
